@@ -2,9 +2,17 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="Video Viral" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video Viral</title>
 
 <style>
+body{
+    margin:0;
+    padding:15px;
+    font-family:Arial,sans-serif;
+    background:#f5f5f5;
+}
+
 .container{
     max-width:600px;
     margin:auto;
@@ -12,13 +20,20 @@
 
 .video-thumb{
     position:relative;
-    margin-bottom:15px;
+    margin-bottom:20px;
+    overflow:hidden;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.25);
 }
 
 .video-thumb img{
     width:100%;
     display:block;
-    border-radius:12px;
+    transition:0.3s ease;
+}
+
+.video-thumb:hover img{
+    transform:scale(1.05);
 }
 
 .play-button{
@@ -26,10 +41,11 @@
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
-    width:80px;
-    height:80px;
-    background:rgba(255,0,0,0.9);
+    width:90px;
+    height:90px;
+    background:#ff0000;
     border-radius:50%;
+    box-shadow:0 0 20px rgba(255,0,0,0.6);
 }
 
 .play-button:before{
@@ -38,32 +54,60 @@
     top:50%;
     left:55%;
     transform:translate(-50%,-50%);
-    border-left:25px solid #fff;
-    border-top:15px solid transparent;
-    border-bottom:15px solid transparent;
+    border-left:28px solid #fff;
+    border-top:18px solid transparent;
+    border-bottom:18px solid transparent;
+}
+
+.duration{
+    position:absolute;
+    bottom:10px;
+    right:10px;
+    background:rgba(0,0,0,0.85);
+    color:#fff;
+    padding:4px 8px;
+    border-radius:5px;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.caption{
+    text-align:center;
+    font-size:15px;
+    font-weight:bold;
+    color:#333;
+    margin-top:-10px;
+    margin-bottom:20px;
 }
 </style>
 </head>
 <body>
 
 <div class="container">
-    <h1 style="text-align:center;margin:15px 0;">
-    Video Viral
-</h1>
 
     <a href="https://agitationmedicdrug.com/mkxvi1dzhv?key=0b4e48058669e7958151b797b10ec6fd" target="_blank">
         <div class="video-thumb">
             <img src="foto1.jpeg" alt="Video 1">
             <div class="play-button"></div>
+            <div class="duration">02:37</div>
         </div>
     </a>
+
+    <div class="caption">
+        ▶ Tonton Video Selengkapnya
+    </div>
 
     <a href="https://agitationmedicdrug.com/mkxvi1dzhv?key=0b4e48058669e7958151b797b10ec6fd" target="_blank">
         <div class="video-thumb">
             <img src="foto2.jpeg" alt="Video 2">
             <div class="play-button"></div>
+            <div class="duration">03:15</div>
         </div>
     </a>
+
+    <div class="caption">
+        ▶ Tonton Video Selengkapnya
+    </div>
 
 </div>
 
